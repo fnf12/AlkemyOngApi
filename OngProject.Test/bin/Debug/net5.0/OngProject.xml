@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OngProject</name>
+    </assembly>
+    <members>
+        <member name="M:OngProject.Controllers.ActivitiesController.Post(OngProject.Core.DTOs.ActivityInsertDto)">
+            <summary>
+            Allows to insert an activity
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.ActivitiesController.UpdateActivity(System.Int32,OngProject.Core.DTOs.ActivityUpdateDto)">
+            <summary>
+            Allows to insert an activity
+            </summary>
+        </member>
+        <member name="T:OngProject.Controllers.AuthController">
+            <summary>
+            Allow athentication functions
+            Login, Register and Me(obtain logged in user data)
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.AuthController.RegisterAsync(OngProject.Core.Entities.AuthModel.RegisterViewModel)">
+            <summary>
+            Allows to register a user
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.AuthController.Login(OngProject.Core.Entities.AuthModel.LoginUserModel)">
+            <summary>
+            Allows to login a user
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.AuthController.Me">
+            <summary>
+            Get authenticated user data
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.CategoriesController.GetPage(System.Int32,System.Int32)">
+            <summary>
+            Get All Categories.
+            </summary>
+            <param name="page"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:OngProject.Controllers.CategoriesController.GetCategory(System.Int32)">
+            <summary>
+            Get a category.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:OngProject.Controllers.CategoriesController.Delete(System.Int32)">
+            <summary>
+            Deletes category.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:OngProject.Controllers.CategoriesController.Post(OngProject.Core.DTOs.CategoryCreateDto)">
+            <summary>
+            Create category.
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.CategoriesController.UpdateCategory(System.Int32,OngProject.Core.DTOs.CategoryUpdateDto)">
+            <summary>
+            Update a category.
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.CommentsController.GetCommentsByPost(System.Int32)">
+            <summary>
+            Get a Comment by id.
+            </summary>
+            <param name="id">A integer number.</param>
+        </member>
+        <member name="M:OngProject.Controllers.CommentsController.GetAll">
+            <summary>
+            Get all Comments.
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.CommentsController.Delete(System.Int32)">
+            <summary>
+            Delete a Comment specified by id.
+            </summary>
+            <param name="id">A integer number.</param>
+        </member>
+        <member name="M:OngProject.Controllers.CommentsController.Insert(OngProject.Core.DTOs.CommentInsertDto)">
+            <summary>
+            Create a Comment.
+            </summary>
+            <param name="comment">A type CommentInsertDto object.</param>
+        </member>
+        <member name="M:OngProject.Controllers.CommentsController.UpdateCommentsAsync(System.Int32,OngProject.Core.DTOs.CommentUpdateDto)">
+            <summary>
+            Update a Comment specified by id.
+            </summary>
+            <param name="id">A integer number.</param>
+            <param name="comment">A type comment object.</param>
+        </member>
+        <member name="M:OngProject.Controllers.ContactsController.GetContacts">
+            <summary>
+            Get all Contacts.
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.ContactsController.Post(OngProject.Core.DTOs.ContactDto)">
+            <summary>
+            Create a Contact.
+            </summary>
+            <param name="contactDto">A type contactDto object.</param>
+        </member>
+        <member name="M:OngProject.Controllers.MembersController.GetPage(System.Int32,System.Int32)">
+            <summary>
+            Get all members of the selected page.
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OngProject.Controllers.MembersController.Post(OngProject.Core.DTOs.MemberDto)">
+            <summary>
+            Create Member
+            </summary>
+            <param name="memberDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OngProject.Controllers.MembersController.Update(System.Int32,OngProject.Core.DTOs.MemberEditDto)">
+            <summary>
+            Update a specific Member
+            </summary>
+            <param name="id"></param>
+            <param name="memberDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OngProject.Controllers.MembersController.Delete(System.Int32)">
+            <summary>
+            Delete a specific Member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OngProject.Controllers.NewsController.GetPage(System.Int32,System.Int32)">
+            <summary>
+            Get all News.
+            </summary>
+            <param name="page"></param>
+            <param name="pageSize"></param>
+        </member>
+        <member name="M:OngProject.Controllers.NewsController.GetOneNews(System.Int32)">
+            <summary>
+            Get a news by id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:OngProject.Controllers.NewsController.Post(OngProject.Core.DTOs.NewsDto)">
+            <summary>
+            Create a News.
+            </summary>
+            <param name="newsDto">A type NewsDto object.</param>
+        </member>
+        <member name="M:OngProject.Controllers.NewsController.Update(System.Int32,OngProject.Core.DTOs.NewsUpdateDto)">
+            <summary>
+            Update a News specified by id.
+            </summary>
+            <param name="id"></param>
+            <param name="newsDto">A type NewsDto object.</param>
+        </member>
+        <member name="M:OngProject.Controllers.NewsController.Delete(System.Int32)">
+            <summary>
+            Delete a News specified by id.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:OngProject.Controllers.OrganizationController.Public">
+            <summary>
+            Get organization with slides
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.OrganizationController.Public(System.Int32,OngProject.Core.DTOs.OrganizationDto)">
+            <summary>
+            Put: public Update Organization
+            </summary>
+            <param name="id"></param>
+            <param name="organizationDto"></param>
+        </member>
+        <member name="M:OngProject.Controllers.SlidesController.Get">
+            <summary>
+            Get all Slides.
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.SlidesController.GetSlide(System.Int32)">
+            <summary>
+            Get a Slide by id.
+            </summary>
+            <param name="id">A integer number.</param>
+        </member>
+        <member name="M:OngProject.Controllers.SlidesController.Post(OngProject.Core.DTOs.SlideCreateDto)">
+            <summary>
+            Create a Slide.
+            </summary>
+            <param name="slideCreateDto">A type SlideInsertDto object.</param>
+        </member>
+        <member name="M:OngProject.Controllers.SlidesController.Update(System.Int32,OngProject.Core.DTOs.SlideCreateDto)">
+            <summary>
+            Update a Slide specified by id.
+            </summary>
+            <param name="id">A integer number.</param>
+            <param name="slideCreateDto">A type SlideInsertDto object.</param>
+        </member>
+        <member name="M:OngProject.Controllers.SlidesController.Delete(System.Int32)">
+            <summary>
+            Delete a Slide specified by id.
+            </summary>
+            <param name="id">A integer number.</param>
+        </member>
+        <member name="M:OngProject.Controllers.TestimonialsController.GetTestimonials(System.Int32,System.Int32)">
+            <summary>
+            Get All Testimonials
+            </summary>
+            <param name="page"></param>
+            <param name="pageSize"></param>
+        </member>
+        <member name="M:OngProject.Controllers.TestimonialsController.Post(OngProject.Core.DTOs.TestimonialDto)">
+            <summary>
+            Create a Testimonial
+            </summary>
+            <param name="testimonialDto"></param>
+        </member>
+        <member name="M:OngProject.Controllers.TestimonialsController.Update(System.Int32,OngProject.Core.DTOs.TestimonialEditDto)">
+            <summary>
+            Update a Testimonial
+            </summary>
+            <param name="id"></param>
+            <param name="testimonialDto"></param>
+        </member>
+        <member name="M:OngProject.Controllers.TestimonialsController.Delete(System.Int32)">
+            <summary>
+            Delete a Testimonial
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:OngProject.Controllers.UsersController.Get">
+            <summary>
+            Get all Users
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.UsersController.Delete(System.String)">
+            <summary>
+            Delete a User
+            </summary>
+        </member>
+        <member name="M:OngProject.Controllers.UsersController.UpdateUser(OngProject.Core.DTOs.UserUpdateDto)">
+            <summary>
+            Update a User
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.ActivityInsertDto.Name">
+            <summary>
+            Activity name
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.ActivityInsertDto.Content">
+            <summary>
+            Activity content
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.ActivityInsertDto.Image">
+            <summary>
+            Activity image, must be jpg, png, jpeg.
+            </summary>
+        </member>
+        <member name="T:OngProject.Core.DTOs.UserDto">
+            <summary>
+            Dto mapped from User entity
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserDto.FirstName">
+            <summary>
+            User First Name
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserDto.LastName">
+            <summary>
+            User Last Name
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserDto.Email">
+            <summary>
+            User email
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserDto.Photo">
+            <summary>
+            User photo
+            </summary>
+        </member>
+        <member name="T:OngProject.Core.DTOs.UserGetAllDto">
+            <summary>
+            Dto mapped from User entity
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserGetAllDto.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserGetAllDto.FirstName">
+            <summary>
+            User First Name
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserGetAllDto.LastName">
+            <summary>
+            User Last Name
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserGetAllDto.Email">
+            <summary>
+            User email
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.DTOs.UserGetAllDto.Photo">
+            <summary>
+            User photo
+            </summary>
+        </member>
+        <member name="T:OngProject.Core.Entities.AuthModel.LoginUserModel">
+            <summary>
+            ViewModel for Login Function
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.LoginUserModel.Email">
+            <summary>
+            Registered User Email
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.LoginUserModel.Password">
+            <summary>
+            Registered user password
+            </summary>
+        </member>
+        <member name="T:OngProject.Core.Entities.AuthModel.RegisterViewModel">
+            <summary>
+            ViewModel for register a user
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.RegisterViewModel.FirstName">
+            <summary>
+            User first name
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.RegisterViewModel.LastName">
+            <summary>
+            User last name
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.RegisterViewModel.Email">
+            <summary>
+            User email
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.RegisterViewModel.Password">
+            <summary>
+            User password
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.RegisterViewModel.ConfirmPassword">
+            <summary>
+            User confirm password
+            </summary>
+        </member>
+        <member name="T:OngProject.Core.Entities.AuthModel.UserManagerResponse">
+            <summary>
+            Response for login and register
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.UserManagerResponse.Message">
+            <summary>
+            If action is success, message contains validation token
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.UserManagerResponse.IsSuccess">
+            <summary>
+            Bool property to confirm response
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Entities.AuthModel.UserManagerResponse.Errors">
+            <summary>
+            Array of errors if not success
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Helper.GenericResult`1.Message">
+            <summary>
+            Allows you to know info about your request
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Helper.GenericResult`1.IsSuccess">
+            <summary>
+            Allows you to know status about your request
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Helper.GenericResult`1.Errors">
+            <summary>
+            If exist list of errors
+            </summary>
+        </member>
+        <member name="P:OngProject.Core.Helper.GenericResult`1._object">
+            <summary>
+            requested object
+            </summary>
+        </member>
+    </members>
+</doc>
